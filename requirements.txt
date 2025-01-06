@@ -1,5 +1,5 @@
 flask==2.2.2
-supabase-py==0.5.1  # Use a valid version; check PyPI for available versions.
+supabase-py  # Use latest stable version available on PyPI.
 torch==1.13.1       # Adjust based on your requirements; ensure it matches your system.
 torchvision==0.14.1  # Adjust based on your requirements; ensure it matches your system.
 transformers==4.21.1  # Check for latest version if needed.
