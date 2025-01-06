@@ -1,8 +1,8 @@
-flask
-supabase-py
-torch
-torchvision
-transformers
-Pillow
-requests
-gunicorn  # Optional for production use; can be used for local testing.
+flask==2.2.2
+supabase-py==0.5.1  # Check for latest version if needed
+torch==1.12.1+cpu   # Ensure this matches your requirements; adjust as needed.
+torchvision==0.13.1+cpu  # Ensure this matches your requirements; adjust as needed.
+transformers==4.21.1  # Check for latest version if needed.
+Pillow==9.1.0         # Check for latest version if needed.
+requests==2.27.1      # Check for latest version if needed.
+gunicorn==20.1.0      # Optional for production use; can be used for local testing.
