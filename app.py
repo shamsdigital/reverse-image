@@ -112,4 +112,6 @@ def get_embedding():
     
     return jsonify({"embedding": embedding}), 200
 
-if 
+if __name__ == '__main__':
+    port = int(os.environ.get("PORT", 5000))  # Use PORT environment variable provided by Fly.io or Railway
+    app.run(debug=True, host='0.0.0.0', port=port)
