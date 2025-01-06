@@ -80,38 +80,3 @@ def insert_image():
     Expects a JSON body with 'image_url' and 'user_id'.
     """
     data = request.json
-
-    # Validate input
-    if 'image_url' not in data or 'user_id' not in data:
-        return {"error": "Missing 'image_url' or 'user_id'."}, 400
-
-    image_url = data['image_url']
-    user_id = data['user_id']
-    
-    return store_image_data(image_url, user_id)
-
-@app.route('/get-embedding', methods=['POST'])
-def get_embedding():
-    """
-    Endpoint to retrieve image embeddings.
-    Expects a JSON body with 'image_url'.
-    """
-    data = request.json
-
-    # Validate input
-    if 'image_url' not in data:
-        return {"error": "Missing 'image_url'."}, 400
-
-    image_url = data['image_url']
-    
-    # Get the embedding for the provided image URL
-    embedding = get_image_embedding(image_url)
-    
-    if embedding is None:
-        return {"error": "Failed to get embedding for the image."}, 400
-    
-    return jsonify({"embedding": embedding}), 200
-
-if __name__ == '__main__':
-    port = int(os.environ.get("PORT", 5000))  # Use PORT environment variable provided by Fly.io or Railway
-    app.run(debug=True, host='0.0.0.0', port=port)
