@@ -1,7 +1,7 @@
 flask==2.2.2
-supabase-py==0.5.1  # Ensure this is a valid version; check PyPI for latest stable version.
-torch==1.12.1+cpu   # Adjust based on your requirements; ensure it matches your system.
-torchvision==0.13.1+cpu  # Adjust based on your requirements; ensure it matches your system.
+supabase-py==0.5.1  # Use a valid version; check PyPI for available versions.
+torch==1.12.1       # Adjust based on your requirements; ensure it matches your system.
+torchvision==0.13.1  # Adjust based on your requirements; ensure it matches your system.
 transformers==4.21.1  # Check for latest version if needed.
 Pillow==9.1.0         # Check for latest version if needed.
 requests==2.27.1      # Check for latest version if needed.
