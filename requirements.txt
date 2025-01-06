@@ -1,8 +1,8 @@
-flask==2.2.2
+flask
 supabase-py  # Use latest stable version available on PyPI.
-torch==1.13.1       # Adjust based on your requirements; ensure it matches your system.
-torchvision==0.14.1  # Adjust based on your requirements; ensure it matches your system.
-transformers==4.21.1  # Check for latest version if needed.
-Pillow==9.3.0         # Check for latest version if needed.
-requests==2.28.1      # Check for latest version if needed.
-gunicorn==20.1.0      # Optional for production use; can be used for local testing.
+torch       # Latest version suitable for your environment; check compatibility.
+torchvision # Latest version suitable for your environment; check compatibility.
+transformers # Latest version suitable for your environment; check compatibility.
+Pillow      # Latest version suitable for your environment; check compatibility.
+requests     # Latest version suitable for your environment; check compatibility.
+gunicorn     # Optional for production use; can be used for local testing.
