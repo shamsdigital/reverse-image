@@ -1,0 +1,8 @@
+flask
+supabase-py
+torch
+torchvision
+transformers
+Pillow
+requests
+gunicorn  # Optional for production use; can be used for local testing.
