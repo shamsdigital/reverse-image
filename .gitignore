@@ -1,0 +1,3 @@
+__pycache__/
+*.pyc
+.env   # If you decide to use a .env file for local secrets.
